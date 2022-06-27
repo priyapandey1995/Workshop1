@@ -5,8 +5,11 @@ public class Gambler {
 	public static void main(String[] args) {
 		//inisialise
 
-		double stake=100;
-		 double bet=1;
+		int stake=100;
+		 int bet=1;
+		System.out.println("Welcome to gambler problem");
+		System.out.println("the stake amount is"+stake);
+		System.out.println("the bet amount is"+bet);
 	}
 
 }
