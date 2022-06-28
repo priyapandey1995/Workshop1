@@ -8,20 +8,29 @@ public class Gambler {
 		int stake=100;
 		 int bets=1;
 		 int totalamountafterbetting;
+		 int stakeIncrease = 150;
+		int stakeDecrease = 50;
 		 
 		//when the probability is less than 0.5 its returns true else false
-		 double betting=Math.random();
+		while(stake > stakeIncrease && stake < stakeDecrease) {
+		double betting=Math.random();
 		 if(betting <=0.5) {
 			 System.out.println("gambler won the bets");
 			 totalamountafterbetting=stake+bets;
 			 System.out.println("amount is" +" "+ totalamountafterbetting);
 		 }
 			 else {
-				 System.out.println("gambler lost the bets");
+			System.out.println("gambler lost the bets");
 			totalamountafterbetting=stake-bets;
 			 System.out.println("amount is"+" "+totalamountafterbetting);
 			 }
-		 }
+		 
+		 
+		 
+		}
+			  
+		  }
+		 } 
 	
 	}
 
